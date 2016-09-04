@@ -7,7 +7,7 @@ Implementation of a simple version of Javascript Promise Library
 ## Quick tutorial:
 
 Using resolve
-```
+```js
 var p = $p(function(resolve,reject){
             resolve(100);
         });
@@ -17,7 +17,7 @@ var p = $p(function(resolve,reject){
 ```
 
 Using Reject
-```
+```js
  var p = $p(function(resolve,reject){
             reject(100);
         });
