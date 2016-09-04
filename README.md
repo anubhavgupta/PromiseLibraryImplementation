@@ -1,5 +1,5 @@
 # PromiseLibraryImplementation
-Custom full implementation of Javascript Promises.
+Custom implementation of JavaScript Promise Library
 
 # Please refer ./Test.js for more examples and usecases.
 
