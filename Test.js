@@ -1,9 +1,9 @@
 var res, rej;
 var succ = function (val) {
     console.log("Pass", val);
-    return (new promise(function(res){
+    return (new $p(function(res){
         res(
-            (new promise(function(res){
+            (new $p(function(res){
               res(9000);
             }))
         );
@@ -16,7 +16,7 @@ var fail = function (val) {
 };
 
 
-var pr = P(function (re, rj) {
+var pr = $p(function (re, rj) {
     console.log("Testing...");
     res = re;
     rej = rj;
@@ -29,5 +29,5 @@ pr
      console.log("Final result:",res);
     });
 
-res(200);
-// rej(100);
+//res(200);
+ rej(100);
